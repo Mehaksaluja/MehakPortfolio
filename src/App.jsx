@@ -10,8 +10,8 @@ import Contact from './components/Contact';
 
 import { vapi, startAssistant, stopAssistant } from './ai.js';
 
-import ActiveCallDetails from '../call/ActiveCallDetails.jsx';
 import AssistantSpeechIndicator from '../call/AssistantSpeechIndicator.jsx';
+import ActiveCallDetails from './call/ActiveCallDetails.jsx';
 
 function App() {
   return (
