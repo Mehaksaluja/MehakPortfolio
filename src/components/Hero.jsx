@@ -4,8 +4,6 @@ import { OrbitControls, Torus, MeshWobbleMaterial, Points, PointMaterial } from 
 import { useTheme } from '../context/ThemeContext';
 import { vapi, startAssistant, stopAssistant } from '../ai.js';
 
-import ActiveCallDetails from '../call/activeCallDetails.jsx';
-import AssistantSpeechIndicator from '../call/AssistantSpeechIndicator.jsx';
 import CallInProgressCard from '../call/CallInProgressCard.jsx';
 
 import * as THREE from 'three';
