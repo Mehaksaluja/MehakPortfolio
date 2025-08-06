@@ -17,25 +17,25 @@ const EducationIcon = () => (
 
 const timelineData = [
   {
-    type: 'work',
-    year: "2022 - Present",
-    title: "Frontend Developer",
-    company: "Tech Solutions Inc.",
-    description: "Led the development of a new user-facing analytics dashboard using React and D3.js, improving data visualization and user engagement by 40%."
+    type: 'Work',
+    year: "July 2025 - Present",
+    title: "Tech and Talent Intern",
+    company: "Zentosys Solutions Private Limited",
+    description: "Currently developing a TMS web portal and driver app to simplify logistics using MERN and Flutter. It features real-time tracking, admin controls, and secure driver authentication."
   },
   {
     type: 'education',
-    year: "2018 - 2022",
-    title: "B.Tech in Computer Science",
-    institution: "University of Technology",
-    details: "Percentage: 85% | Specialized in Web Development and Artificial Intelligence."
+    year: "2023 - Present",
+    title: "B.Tech in Computer Science and Engineering",
+    institution: "Seth Jai Parkash Mukand Lal Institute of Engineering and Technology",
+    details: "CGPA: 8.5 | Specialized in Web Development and Flutter App Development"
   },
   {
     type: 'education',
-    year: "2016 - 2018",
+    year: "2022 - 2023",
     title: "Higher Secondary Education",
-    institution: "City Public School",
-    details: "Percentage: 92% | Focused on Physics, Chemistry, and Mathematics."
+    institution: "DAV Public School, Radaur",
+    details: "Percentage: 94.4% | Focused on Physics, Chemistry, and Mathematics."
   }
 ];
 

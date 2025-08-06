@@ -85,7 +85,6 @@ const Hero = () => {
   return (
     <>
       <div className={`relative w-full h-screen ${theme === 'dark' ? 'bg-[#1A1D1F]' : 'bg-white'}`}>
-        {/* 3D Background */}
         <div className="absolute top-0 left-0 w-full h-full">
           <Canvas camera={{ position: [0, 0, 5] }}>
             <Suspense fallback={null}>
@@ -109,7 +108,7 @@ const Hero = () => {
             Crafting Digital Experiences
           </h1>
           <p className={`mt-4 text-lg md:text-xl max-w-2xl ${theme === 'dark' ? 'text-gray-300' : 'text-gray-800'}`}>
-            I'm [Your Name], a passionate developer focused on building beautiful, functional, and user-centric web applications.
+            I'm Mehak Saluja, a passionate developer focused on building beautiful, functional, and user-centric web applications using AI.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <a

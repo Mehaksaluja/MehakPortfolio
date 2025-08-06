@@ -4,7 +4,7 @@ import { useTheme } from '../context/ThemeContext';
 const skillsData = [
   {
     category: "Web Development",
-    skills: ["React", "Next.js", "JavaScript", "HTML5", "CSS3", "TailwindCSS", "Shadcn/UI", "Node.js", "Express", "Python", "C++"]
+    skills: ["React", "Next.js", "JavaScript", "HTML5", "CSS3", "TailwindCSS", "Shadcn/UI", "Node.js", "Express", "Python", "C++", "Flutter", "Dart"]
   },
   {
     category: "Databases",

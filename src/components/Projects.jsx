@@ -4,52 +4,52 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
 const projects = [
   {
-    title: "Project One",
-    description: "A detailed overview of the project, focusing on the problem it solves and the technologies used.",
-    tags: ["React", "Node.js", "MongoDB"],
+    title: "AI Based Portfolio",
+    description: "A 3D portfolio that showcases my skills and projects, built with React Three Fiber and Tailwind CSS with AI integration as a personal assistant.",
+    tags: ["VAPI API", "React JS", "Three.js", "Tailwind CSS"],
     image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop",
-    liveUrl: "#",
-    sourceUrl: "#"
+    liveUrl: "https://mehak-portfolio-pewi.vercel.app/",
+    sourceUrl: "https://github.com/Mehaksaluja/Portfolio_Mehak"
   },
   {
-    title: "Project Two",
+    title: "Zenvo Ecommerce",
     description: "A detailed overview of the project, focusing on the problem it solves and the technologies used.",
-    tags: ["Next.js", "TailwindCSS", "Firebase"],
+    tags: ["MongoDB", "TailwindCSS", "Express", "React", "Node.js"],
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
-    liveUrl: "#",
-    sourceUrl: "#"
+    liveUrl: "https://zenvo-store.onrender.com/",
+    sourceUrl: "https://github.com/Mehaksaluja/Zenvo-Ecommerce"
   },
   {
-    title: "Project Three",
-    description: "A detailed overview of the project, focusing on the problem it solves and the technologies used.",
-    tags: ["Three.js", "Vite", "GSAP"],
+    title: "Style-Scout",
+    description: "A flutter app that helps users find the best fashion for themselves by adding image of the products.",
+    tags: ["Flutter", "GeminiAPI", "Firebase"],
     image: "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?q=80&w=2070&auto=format&fit=crop",
-    liveUrl: "#",
-    sourceUrl: "#"
+    liveUrl: "https://github.com/Mehaksaluja/style_scout/releases/download/v1.0.0/app-release.apk",
+    sourceUrl: "https://github.com/Mehaksaluja/style_scout"
   },
   {
-    title: "Project Four",
-    description: "A detailed overview of the project, focusing on the problem it solves and the technologies used.",
-    tags: ["React", "GraphQL", "PostgreSQL"],
+    title: "Project Management System",
+    description: "A project management system that allows users to create, manage, and track projects and tasks.",
+    tags: ["React", "MongoDB", "Express", "Node.js", 'Tailwind CSS'],
     image: "https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=2106&auto=format&fit=crop",
-    liveUrl: "#",
-    sourceUrl: "#"
+    liveUrl: "https://saas-app-7owr.onrender.com/",
+    sourceUrl: "https://github.com/Mehaksaluja/SAAS_App"
   },
   {
-    title: "Project Five",
-    description: "A detailed overview of the project, focusing on the problem it solves and the technologies used.",
-    tags: ["Svelte", "Supabase"],
+    title: "Growth Magnet",
+    description: "A social media Agency website that shows the services provided by the agency.",
+    tags: ["React JS", "Tailwind CSS"],
     image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop",
-    liveUrl: "#",
-    sourceUrl: "#"
+    liveUrl: "https://growth-magnet.netlify.app/",
+    sourceUrl: "https://github.com/Mehaksaluja/Growth-Magnet"
   },
   {
-    title: "Project Six",
-    description: "A detailed overview of the project, focusing on the problem it solves and the technologies used.",
-    tags: ["Vue", "Express", "Heroku"],
+    title: "SkillSetGo",
+    description: "A Job Portal that helps users find the best jobs for themselves by adding their skills and experience.",
+    tags: ["Flutter", "Firebase", "Dart"],
     image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop",
-    liveUrl: "#",
-    sourceUrl: "#"
+    liveUrl: "https://skillsetgomehak.vercel.app/",
+    sourceUrl: "https://github.com/Mehaksaluja/SkillSetGo"
   }
 ];
 

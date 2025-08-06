@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <>
       <header className={headerClasses}>
-        <a href="#" className="text-2xl font-bold">Your Name</a>
+        <a href="#" className="text-2xl font-bold">Mehak Saluja</a>
         <div className="flex items-center space-x-4">
           <div className="hidden md:flex space-x-12">
             {navLinks.map((link) => (
