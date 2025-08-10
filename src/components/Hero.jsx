@@ -112,7 +112,7 @@ const Hero = () => {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <a
-              href="/resume.pdf"
+              href="../src/assets/resume.pdf"
               download
               className={`px-8 py-3 font-bold rounded-full transition-all duration-300 transform hover:scale-105 ${theme === 'dark'
                 ? 'bg-blue-500 text-white hover:bg-blue-600'

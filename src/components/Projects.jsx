@@ -7,15 +7,15 @@ const projects = [
     title: "AI Based Portfolio",
     description: "A 3D portfolio that showcases my skills and projects, built with React Three Fiber and Tailwind CSS with AI integration as a personal assistant.",
     tags: ["VAPI API", "React JS", "Three.js", "Tailwind CSS"],
-    image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop",
+    image: "../src/assets/portfolio.png",
     liveUrl: "https://mehak-portfolio-pewi.vercel.app/",
     sourceUrl: "https://github.com/Mehaksaluja/Portfolio_Mehak"
   },
   {
     title: "Zenvo Ecommerce",
-    description: "A detailed overview of the project, focusing on the problem it solves and the technologies used.",
+    description: "Developed a user-friendly and fully responsive online store with the MERN stack. ",
     tags: ["MongoDB", "TailwindCSS", "Express", "React", "Node.js"],
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
+    image: "../src/assets/zenvo-web.png",
     liveUrl: "https://zenvo-store.onrender.com/",
     sourceUrl: "https://github.com/Mehaksaluja/Zenvo-Ecommerce"
   },
@@ -28,10 +28,10 @@ const projects = [
     sourceUrl: "https://github.com/Mehaksaluja/style_scout"
   },
   {
-    title: "Project Management System",
+    title: "Client Flow",
     description: "A project management system that allows users to create, manage, and track projects and tasks.",
     tags: ["React", "MongoDB", "Express", "Node.js", 'Tailwind CSS'],
-    image: "https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=2106&auto=format&fit=crop",
+    image: "../src/assets/clientflow.png",
     liveUrl: "https://saas-app-7owr.onrender.com/",
     sourceUrl: "https://github.com/Mehaksaluja/SAAS_App"
   },
@@ -39,7 +39,7 @@ const projects = [
     title: "Growth Magnet",
     description: "A social media Agency website that shows the services provided by the agency.",
     tags: ["React JS", "Tailwind CSS"],
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop",
+    image: "../src/assets/growthmagnet.png",
     liveUrl: "https://growth-magnet.netlify.app/",
     sourceUrl: "https://github.com/Mehaksaluja/Growth-Magnet"
   },
@@ -47,7 +47,7 @@ const projects = [
     title: "SkillSetGo",
     description: "A Job Portal that helps users find the best jobs for themselves by adding their skills and experience.",
     tags: ["Flutter", "Firebase", "Dart"],
-    image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop",
+    image: "../src/assets/skillsetgo.png",
     liveUrl: "https://skillsetgomehak.vercel.app/",
     sourceUrl: "https://github.com/Mehaksaluja/SkillSetGo"
   }
