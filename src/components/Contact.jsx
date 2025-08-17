@@ -54,10 +54,10 @@ const Contact = () => {
             Have a project in mind or just want to connect? Feel free to send me a message.
           </p>
           <div className="flex justify-center space-x-6 mb-12">
-            <a href="#" className={`transition-colors duration-300 ${theme === 'dark' ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-black'}`}><LinkedInIcon /></a>
-            <a href="#" className={`transition-colors duration-300 ${theme === 'dark' ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-black'}`}><GitHubIcon /></a>
-            <a href="#" className={`transition-colors duration-300 ${theme === 'dark' ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-black'}`}><XIcon /></a>
-            <a href="#" className={`transition-colors duration-300 ${theme === 'dark' ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-black'}`}><ThreadsIcon /></a>
+            <a href="https://www.linkedin.com/in/mehak-saluja/" className={`transition-colors duration-300 ${theme === 'dark' ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-black'}`}><LinkedInIcon /></a>
+            <a href="https://github.com/Mehaksaluja" className={`transition-colors duration-300 ${theme === 'dark' ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-black'}`}><GitHubIcon /></a>
+            <a href="https://x.com/salujamehak5" className={`transition-colors duration-300 ${theme === 'dark' ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-black'}`}><XIcon /></a>
+            <a href="https://www.threads.com/@salujamehak2" className={`transition-colors duration-300 ${theme === 'dark' ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-black'}`}><ThreadsIcon /></a>
           </div>
         </div>
 
