@@ -7,7 +7,7 @@ const projects = [
     title: "AI Based Portfolio",
     description: "A 3D portfolio that showcases my skills and projects, built with React Three Fiber and Tailwind CSS with AI integration as a personal assistant.",
     tags: ["VAPI API", "React JS", "Three.js", "Tailwind CSS"],
-    image: "../src/assets/portfolio.png",
+    image: "/assets/portfolio.png",
     liveUrl: "https://mehak-portfolio-pewi.vercel.app/",
     sourceUrl: "https://github.com/Mehaksaluja/Portfolio_Mehak"
   },
@@ -15,7 +15,7 @@ const projects = [
     title: "Zenvo Ecommerce",
     description: "Developed a user-friendly and fully responsive online store with the MERN stack. ",
     tags: ["MongoDB", "TailwindCSS", "Express", "React", "Node.js"],
-    image: "../src/assets/zenvo-web.png",
+    image: "/assets/zenvo-web.png",
     liveUrl: "https://zenvo-store.onrender.com/",
     sourceUrl: "https://github.com/Mehaksaluja/Zenvo-Ecommerce"
   },
@@ -31,7 +31,7 @@ const projects = [
     title: "Client Flow",
     description: "A project management system that allows users to create, manage, and track projects and tasks.",
     tags: ["React", "MongoDB", "Express", "Node.js", 'Tailwind CSS'],
-    image: "../src/assets/clientflow.png",
+    image: "/assets/clientflow.png",
     liveUrl: "https://saas-app-7owr.onrender.com/",
     sourceUrl: "https://github.com/Mehaksaluja/SAAS_App"
   },
@@ -39,7 +39,7 @@ const projects = [
     title: "Growth Magnet",
     description: "A social media Agency website that shows the services provided by the agency.",
     tags: ["React JS", "Tailwind CSS"],
-    image: "../src/assets/growthmagnet.png",
+    image: "/assets/growthmagnet.png",
     liveUrl: "https://growth-magnet.netlify.app/",
     sourceUrl: "https://github.com/Mehaksaluja/Growth-Magnet"
   },
@@ -47,7 +47,7 @@ const projects = [
     title: "SkillSetGo",
     description: "A Job Portal that helps users find the best jobs for themselves by adding their skills and experience.",
     tags: ["Flutter", "Firebase", "Dart"],
-    image: "../src/assets/skillsetgo.png",
+    image: "/assets/skillsetgo.png",
     liveUrl: "https://skillsetgomehak.vercel.app/",
     sourceUrl: "https://github.com/Mehaksaluja/SkillSetGo"
   }
