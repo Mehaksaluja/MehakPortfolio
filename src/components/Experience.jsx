@@ -24,6 +24,13 @@ const timelineData = [
     description: "Currently developing a TMS web portal and driver app to simplify logistics using MERN and Flutter. It features real-time tracking, admin controls, and secure driver authentication."
   },
   {
+    type: 'Work',
+    year: "June 2025 - August 2025",
+    title: "Web Development Intern",
+    company: "Insyble Tech Private Limited",
+    description: "Worked on differnt projects using React.js, Node.js, and MongoDB. Gained experience in building responsive web applications and collaborating in an agile environment."
+  },
+  {
     type: 'education',
     year: "2023 - Present",
     title: "B.Tech in Computer Science and Engineering",
