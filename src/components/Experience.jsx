@@ -19,7 +19,7 @@ const timelineData = [
   {
     type: 'Work',
     year: "July 2025 - Present",
-    title: "Tech and Talent Intern",
+    title: "Software Developer Intern",
     company: "Zentosys Solutions Private Limited",
     description: "Currently developing a TMS web portal and driver app to simplify logistics using MERN and Flutter. It features real-time tracking, admin controls, and secure driver authentication."
   },
