@@ -16,7 +16,7 @@ const projects = [
     description: "A 3D portfolio that showcases my skills and projects, built with React Three Fiber and Tailwind CSS with AI integration as a personal assistant.",
     tags: ["VAPI API", "React JS", "Three.js", "Tailwind CSS"],
     image: "/assets/portfolio.png",
-    liveUrl: "https://mehak-portfolio-pewi.vercel.app/",
+    liveUrl: "https://mehak-portfolio-f34b.vercel.app/",
     sourceUrl: "https://github.com/Mehaksaluja/Portfolio_Mehak"
   },
   {
