@@ -4,6 +4,14 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
 const projects = [
   {
+    title: "NewsifyX.ai",
+    description: "An autonomous AI system that curates global news and broadcasts to X (Twitter) using Groq's lightning-fast LLM API.",
+    tags: ["Python", "FastAPI", "React JS", "CSS", "Firebase", "NewsAPI", "XDeveloper", "GroqAI", "Vercel", "Render"],
+    image: "/assets/newsifyx.png",
+    liveUrl: "https://news-dashboard-teal.vercel.app/",
+    sourceUrl: "https://github.com/Mehaksaluja/NewsifyX.ai"
+  },
+  {
     title: "AI Based Portfolio",
     description: "A 3D portfolio that showcases my skills and projects, built with React Three Fiber and Tailwind CSS with AI integration as a personal assistant.",
     tags: ["VAPI API", "React JS", "Three.js", "Tailwind CSS"],
