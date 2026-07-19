@@ -11,8 +11,12 @@ const skillsData = [
     skills: ["MongoDB", "PostgreSQL", "SQL", "Firebase"]
   },
   {
-    category: "AI & Data Science",
-    skills: ["OpenAI API", "Numpy", "Pandas", "Seaborn", "Matplotlib", "Data Analysis"]
+    category: "Agentic AI",
+    skills: ["LangChain", "LangGraph", "MCP", "LLMs", "RAG", "AI Agents", "Tool Calling", "OpenAI API", "Prompt Engineering"]
+  },
+  {
+    category: "Data Science",
+    skills: ["Numpy", "Pandas", "Seaborn", "Matplotlib", "Data Analysis"]
   },
   {
     category: "DevOps & Tools",
