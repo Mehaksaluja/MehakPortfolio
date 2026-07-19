@@ -4,6 +4,13 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
 const projects = [
   {
+    title: "ReplyForge",
+    description: "A Chrome extension that lives inside Gmail and drafts context-aware replies. Type what you mean, like 'reject politely' or 'tell them I'll send it Friday', and insert a ready-to-send reply without leaving the inbox.",
+    tags: ["Chrome Extension", "JavaScript", "Gmail API", "AI"],
+    image: "/assets/replyforge.png",
+    liveUrl: "https://replyforge.mehakworks.com/"
+  },
+  {
     title: "NewsifyX.ai",
     description: "An autonomous AI system that curates global news and broadcasts to X (Twitter) using Groq's lightning-fast LLM API.",
     tags: ["Python", "FastAPI", "React JS", "CSS", "Firebase", "NewsAPI", "XDeveloper", "GroqAI", "Vercel", "Render"],
@@ -88,14 +95,16 @@ const ProjectCard = ({ project }) => {
           >
             <FiExternalLink /> Live Demo
           </a>
-          <a
-            href={project.sourceUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200 ${theme === 'dark' ? 'bg-[#2A2E30] text-white hover:bg-[#3A3F42]' : 'bg-gray-200 hover:bg-gray-300'}`}
-          >
-            <FiGithub /> Source
-          </a>
+          {project.sourceUrl && (
+            <a
+              href={project.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200 ${theme === 'dark' ? 'bg-[#2A2E30] text-white hover:bg-[#3A3F42]' : 'bg-gray-200 hover:bg-gray-300'}`}
+            >
+              <FiGithub /> Source
+            </a>
+          )}
         </div>
       </div>
     </div>
