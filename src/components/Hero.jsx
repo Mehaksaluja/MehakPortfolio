@@ -228,11 +228,11 @@ const Hero = () => {
         </div>
 
         <div className="relative z-10 flex flex-col items-center justify-center w-full h-full text-center px-5">
-          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
-            Crafting Digital Experiences
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+            Software Developer & Agentic AI Engineer
           </h1>
           <p className={`mt-4 text-lg md:text-xl max-w-2xl ${theme === 'dark' ? 'text-gray-300' : 'text-gray-800'}`}>
-            I'm Mehak Saluja, a passionate developer focused on building beautiful, functional, and user-centric web applications using AI.
+            I'm Mehak Saluja — building web applications and autonomous AI agents with MERN, Flutter, and LangChain. Talk to my AI assistant below to learn more.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <a
