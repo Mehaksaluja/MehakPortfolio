@@ -1,0 +1,111 @@
+/* Years are drawn from when each project was built — correct any that are off. */
+export const work = [
+  {
+    id: 'bounty',
+    title: 'Bounty',
+    kind: 'Autonomous AI agent',
+    year: '2026',
+    description:
+      'A command-line agent that resolves open-source GitHub issues end to end. A multi-agent pipeline triages the backlog, locates the relevant source with AST-based chunking and import-graph traversal, then plans a fix before writing any code. Every generated test has to fail on the unpatched repository and pass only after the fix, and sandbox errors feed back into a self-correction loop. Untrusted code runs in an isolated cloud sandbox and no pull request opens without human approval.',
+    stack: ['Python', 'LangGraph', 'tree-sitter', 'Chroma', 'E2B', 'GitHub API', 'SQLite'],
+    image: '/assets/bounty.png',
+    live: null,
+    source: 'https://github.com/Mehaksaluja/Bounty',
+  },
+  {
+    id: 'replyforge',
+    title: 'ReplyForge',
+    kind: 'Browser extension',
+    year: '2026',
+    description:
+      'A Chrome extension that lives inside Gmail and drafts context-aware replies. Type the intent — "reject politely", "tell them I will send it Friday" — and insert a ready-to-send reply without leaving the inbox.',
+    stack: ['Chrome Extension', 'JavaScript', 'Gmail API', 'LLM'],
+    image: '/assets/replyforge.png',
+    live: 'https://replyforge.mehakworks.com/',
+    source: null,
+  },
+  {
+    id: 'newsifyx',
+    title: 'NewsifyX.ai',
+    kind: 'Autonomous agent',
+    year: '2026',
+    description:
+      'An autonomous system that curates global news and broadcasts it to X without supervision. Runs on Groq for low-latency inference, with a FastAPI backend and a React dashboard for oversight.',
+    stack: ['Python', 'FastAPI', 'React', 'Firebase', 'Groq', 'NewsAPI', 'Vercel', 'Render'],
+    image: '/assets/newsifyx.png',
+    live: 'https://news-dashboard-teal.vercel.app/',
+    source: 'https://github.com/Mehaksaluja/NewsifyX.ai',
+  },
+  {
+    id: 'clientflow',
+    title: 'Client Flow',
+    kind: 'Web application',
+    year: '2025',
+    description:
+      'A project management system for tracking clients, projects and tasks through to delivery. Built as a multi-tenant SaaS with role-based access.',
+    stack: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
+    image: '/assets/clientflow.png',
+    live: 'https://saas-app-7owr.onrender.com/',
+    source: 'https://github.com/Mehaksaluja/SAAS_App',
+  },
+  {
+    id: 'zenvo',
+    title: 'Zenvo',
+    kind: 'Web application',
+    year: '2025',
+    description:
+      'A full e-commerce store on the MERN stack — catalogue, cart, checkout and an admin surface for inventory.',
+    stack: ['MongoDB', 'Express', 'React', 'Node.js', 'Tailwind CSS'],
+    image: '/assets/zenvo-web.png',
+    live: 'https://zenvo-store.onrender.com/',
+    source: 'https://github.com/Mehaksaluja/Zenvo-Ecommerce',
+  },
+  {
+    id: 'skillsetgo',
+    title: 'SkillSetGo',
+    kind: 'Mobile application',
+    year: '2025',
+    description:
+      'A job portal that matches candidates to openings based on the skills and experience they enter, built as a Flutter app on Firebase.',
+    stack: ['Flutter', 'Dart', 'Firebase'],
+    image: '/assets/skillsetgo.png',
+    live: 'https://skillsetgomehak.vercel.app/',
+    source: 'https://github.com/Mehaksaluja/SkillSetGo',
+  },
+  {
+    id: 'style-scout',
+    title: 'Style Scout',
+    kind: 'Mobile application',
+    year: '2025',
+    description:
+      'A Flutter app that reads an uploaded product image and recommends what pairs with it, using Gemini for visual reasoning.',
+    stack: ['Flutter', 'Gemini API', 'Firebase'],
+    image: null,
+    live: 'https://github.com/Mehaksaluja/style_scout/releases/download/v1.0.0/app-release.apk',
+    source: 'https://github.com/Mehaksaluja/style_scout',
+  },
+  {
+    id: 'portfolio-v1',
+    title: 'Portfolio v1',
+    kind: 'Interactive site',
+    year: '2025',
+    description:
+      'The previous version of this site — a 3D scene in React Three Fiber with a voice assistant that answered questions about my work.',
+    stack: ['React', 'Three.js', 'React Three Fiber', 'VAPI', 'Tailwind CSS'],
+    image: '/assets/portfolio.png',
+    live: 'https://mehak-portfolio-f34b.vercel.app/',
+    source: 'https://github.com/Mehaksaluja/Portfolio_Mehak',
+  },
+  {
+    id: 'growth-magnet',
+    title: 'Growth Magnet',
+    kind: 'Marketing site',
+    year: '2025',
+    description:
+      'A site for a social media agency, laying out their services and case work.',
+    stack: ['React', 'Tailwind CSS'],
+    image: '/assets/growthmagnet.png',
+    live: 'https://growth-magnet.netlify.app/',
+    source: 'https://github.com/Mehaksaluja/Growth-Magnet',
+  },
+];

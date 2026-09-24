@@ -1,121 +1,86 @@
-import React from 'react';
-import { useInView } from 'react-intersection-observer';
-import { useTheme } from '../context/ThemeContext';
+import Reveal from './Reveal';
+import SectionTitle from './SectionTitle';
 
-const WorkIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-  </svg>
-);
-const EducationIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-    <path d="M6 12v5c0 5 4 5 6 5s6-0 6-5v-5"></path>
-  </svg>
-);
-
-const timelineData = [
+const jobs = [
   {
-    type: 'Work',
-    year: "July 2025 - Present",
-    title: "Software Developer Intern",
-    company: "Zentosys Solutions Private Limited",
-    description: "Currently developing a TMS web portal and driver app to simplify logistics using MERN and Flutter. It features real-time tracking, admin controls, and secure driver authentication."
+    company: 'Zentosys Solutions',
+    role: 'Software Developer Intern',
+    dates: 'July 2025 — Present',
+    place: 'India',
+    current: true,
+    points: [
+      'Building a transport management portal and a Flutter driver app with live vehicle tracking.',
+      'Shipped secure driver authentication and admin controls across the MERN stack.',
+    ],
   },
   {
-    type: 'Work',
-    year: "June 2025 - August 2025",
-    title: "Web Development Intern",
-    company: "Insyble Tech Private Limited",
-    description: "Worked on differnt projects using React.js, Node.js, and MongoDB. Gained experience in building responsive web applications and collaborating in an agile environment."
+    company: 'Insyble Tech',
+    role: 'Web Development Intern',
+    dates: 'June 2025 — August 2025',
+    place: 'India',
+    current: false,
+    points: [
+      'Built responsive interfaces in React against Node and MongoDB services.',
+      'Worked across several client projects in a weekly release cycle.',
+    ],
   },
-  {
-    type: 'education',
-    year: "2023 - Present",
-    title: "B.Tech in Computer Science and Engineering",
-    institution: "Seth Jai Parkash Mukand Lal Institute of Engineering and Technology",
-    details: "CGPA: 8.5 | Specialized in Web Development and Flutter App Development"
-  },
-  {
-    type: 'education',
-    year: "2022 - 2023",
-    title: "Higher Secondary Education",
-    institution: "DAV Public School, Radaur",
-    details: "Percentage: 94.4% | Focused on Physics, Chemistry, and Mathematics."
-  }
 ];
 
-const ContentCard = ({ data, animationClass }) => {
-  const { theme } = useTheme();
-  return (
-    <div className={`p-5 rounded-lg shadow-lg transform transition-all duration-700 ${animationClass} ${theme === 'dark' ? 'bg-[#1A1D1F]' : 'bg-gray-100'}`}>
-      <div className="flex items-center space-x-3 mb-2">
-        <div className={`${theme === 'dark' ? 'text-blue-400' : 'text-black'}`}>
-          {data.type === 'work' ? <WorkIcon /> : <EducationIcon />}
-        </div>
-        <h3 className="text-xl font-bold">{data.title}</h3>
-      </div>
-      <p className={`mb-3 text-sm ${theme === 'dark' ? 'text-blue-300' : 'text-gray-600'}`}>
-        {data.company || data.institution} | {data.year}
-      </p>
-      <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-800'}`}>
-        {data.description || data.details}
-      </p>
-    </div>
-  );
-};
+const Experience = () => (
+  <section id="experience" className="mx-auto max-w-6xl scroll-mt-24 px-6 pt-24 lg:px-10">
+    <SectionTitle eyebrow="Career" title="Experience" />
 
-const TimelineItem = ({ data, index }) => {
-  const { theme } = useTheme();
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
+    <div className="relative mt-8 pl-6 sm:pl-8">
+      {/* The spine that threads the roles together. */}
+      <span className="absolute top-2 bottom-2 left-[5px] w-px bg-gradient-to-b from-ink/25 via-line to-transparent" />
 
-  const isLeftDesktop = index % 2 === 0;
-  const animationClass = inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10';
+      <div className="space-y-4">
+        {jobs.map((job, i) => (
+          <Reveal key={job.company} delay={i * 90} as="article" className="relative">
+            <span className="absolute top-5 -left-6 flex h-3 w-3 items-center justify-center sm:-left-8">
+              {job.current && (
+                <span className="absolute h-3 w-3 animate-ping rounded-full bg-emerald-400/60" />
+              )}
+              <span
+                className={`relative h-[11px] w-[11px] rounded-full border-2 ${
+                  job.current ? 'border-emerald-400 bg-emerald-400' : 'border-line bg-page'
+                }`}
+              />
+            </span>
 
-  return (
-    <div ref={ref} className="mb-8 flex justify-between items-center w-full">
-      <div className="hidden md:block w-5/12">
-        {!isLeftDesktop && <ContentCard data={data} animationClass={animationClass} />}
-      </div>
+            <div className="rounded-xl border border-line bg-card/70 px-4 py-4 transition-colors hover:border-ink/20">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-5 gap-y-1">
+                <div className="flex flex-wrap items-center gap-2">
+                  <h3 className="text-[17px] font-semibold text-ink">{job.company}</h3>
+                  {job.current && (
+                    <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[11px] font-medium text-emerald-400">
+                      Working
+                    </span>
+                  )}
+                </div>
+                <p className="text-[13px] text-faint">{job.dates}</p>
+              </div>
 
-      <div className="z-10 flex items-center">
-        <div className={`w-4 h-4 rounded-full transition-all duration-700 ${inView
-          ? (theme === 'dark' ? 'bg-blue-500' : 'bg-black') + ' scale-125'
-          : (theme === 'dark' ? 'bg-gray-600' : 'bg-gray-400')
-          }`}></div>
-      </div>
+              <p className="mt-0.5 text-[14px] text-muted">
+                {job.role}
+                <span className="mx-1.5 text-faint">·</span>
+                <span className="text-faint">{job.place}</span>
+              </p>
 
-      <div className="w-full pl-8 md:pl-0 md:w-5/12">
-        <div className="md:hidden">
-          <ContentCard data={data} animationClass={animationClass} />
-        </div>
-        <div className="hidden md:block">
-          {isLeftDesktop && <ContentCard data={data} animationClass={animationClass} />}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const Experience = () => {
-  const { theme } = useTheme();
-  return (
-    <div id="experience" className={`py-20 px-5 ${theme === 'dark' ? 'bg-[#1A1D1F]' : 'bg-white'}`}>
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16">My Journey</h2>
-        <div className="relative max-w-3xl mx-auto">
-          <div className={`absolute left-2 md:left-1/2 md:transform md:-translate-x-1/2 w-0.5 h-full ${theme === 'dark' ? 'bg-gray-700' : 'bg-gray-300'}`}></div>
-          {timelineData.map((data, index) => (
-            <TimelineItem key={index} data={data} index={index} />
-          ))}
-        </div>
+              <ul className="mt-2.5 space-y-1">
+                {job.points.map((point) => (
+                  <li key={point} className="flex gap-2.5 text-[14px] leading-snug text-faint">
+                    <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-faint" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+        ))}
       </div>
     </div>
-  );
-};
+  </section>
+);
 
 export default Experience;
